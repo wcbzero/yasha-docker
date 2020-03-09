@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/local/bin/yahsa $@
+/usr/local/bin/yasha $@
