@@ -1,3 +1,4 @@
 FROM python:3
-RUN pip --no-cache-dir install yasha
-ENTRYPOINT /usr/local/bin/yasha
+ADD entrypoint.sh /entrypoint.sh
+RUN pip --no-cache-dir install yasha && chmod +x /entrypoint.sh
+ENTRYPOINT /entrypoint.sh
